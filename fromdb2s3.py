@@ -5,7 +5,7 @@ import random
 import string
 import os
 from datetime import datetime
-
+#takes value from dynamodb and put it under random directory in s3 
 dynamodb = boto3.resource('dynamodb')
 s3 = boto3.client('s3')
 def lambda_handler(event, context):
