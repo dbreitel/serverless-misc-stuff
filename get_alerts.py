@@ -232,7 +232,7 @@ def save_alerts_to_file(alerts, base_filename=None):
         print(f"Saved {len(alerts)} alerts to {filename}")
         
         # Upload to S3
-        upload_to_s3(filename, 'db-pan-bucket')
+        upload_to_s3(filename, '<BUCKET_NAME>')
         
         return filename
     except Exception as e:
